@@ -1,0 +1,76 @@
+.landing-page-section
+{
+    .banner-section
+    {
+        background: url('../images/login-banner.jpg');
+        background-attachment: scroll;
+        background-size: cover;
+        height: 550px;
+        .banner-item
+        {
+            // display: flex;
+            // justify-content: center;
+            // text-align: center;
+            // align-items: center;
+            padding: 10rem 0;
+            .caption
+            {
+                h3
+                {
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    color: var(--black);
+                    font-weight: 700;
+                    padding: 0;
+                    margin-bottom: 0.5rem;
+                    @media only screen and (max-width: 768px)
+                    {
+                        font-size: 20px;
+                    }
+                }
+                p
+                {
+                    font-size: 18px;
+                    color: var(--black);
+                    font-weight: 400;
+                    @media only screen and (max-width: 768px)
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .slider-btn
+            {
+                @media only screen and (max-width: 768px)
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center; 
+                }
+                .banner-btn
+                {
+                    color: var(--white) !important;
+                    background: var(--primary-color);
+                    padding: 10px 35px !important;
+                    margin: 0 5px;
+                    border-radius: 50px;
+                    border: none;
+                    &:hover
+                    {
+                        background: var(--secondary-color);
+                    }
+                    &.g-rounded-50
+                    {
+                        border-radius: 50px;
+                    }
+                    @media only screen and (max-width: 768px)
+                    {
+                        padding: 10px 20px !important;
+                    }
+                }
+                
+            }
+        }
+    }
+}

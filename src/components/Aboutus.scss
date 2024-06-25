@@ -1,0 +1,57 @@
+
+.home-about-section
+{
+    background: var(--white);
+    padding: 5rem 0;
+    .title-heading
+    {
+        h2
+        {
+            background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 1.563rem;
+        }
+        .heading-line
+        {
+            height: 0.125rem;
+            width: 1.875rem;
+            background: var(--primary-color);
+            margin-bottom: .5rem;
+            display: inline-block;
+        }
+    }
+    .slider-btn
+    {
+        padding: 1.5rem 0;
+        .banner-btn
+        {
+            color: var(--white) !important;
+            background: var(--primary-color);
+            padding: 0.625rem 2.188rem !important;
+            margin: 0 0.313rem;
+            border-radius: 3.125rem;
+            border: none;
+            &:hover
+            {
+                background: var(--secondary-color);
+            }
+            &.g-rounded-50
+            {
+                border-radius: 3.125rem;
+            }
+            @media only screen and (max-width: 768px)
+            {
+                padding: 0.625rem 1.25rem !important;
+            }
+        }
+        @media only screen and (max-width: 768px)
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+        }
+    }
+}

@@ -1,0 +1,259 @@
+.start-page-section
+{
+    padding: 3rem 0;
+    background: var(--primary-color);
+    @media only screen and (max-width: 768px)
+    {
+        
+    }
+    .title-heading
+    {
+        h2
+        {
+            font-weight: 700;
+            color: var(--white);
+            font-size: 25px;
+        }
+        .heading-line
+        {
+            height: 2px;
+            width: 30px;
+            background: var(--primary-color);
+            margin-bottom: .5rem;
+            display: inline-block;
+        }
+        p
+        {
+            font-size: 14px;
+            color: var(--white);
+        }
+    }
+}
+
+
+.wizard-payment
+{
+    padding: 5rem 0;
+}
+
+
+.banner-btn2
+{
+    color: var(--black) !important;
+    background: rgba(204, 204, 204, 0.2901960784);
+    border-radius: 50px;
+    border: none;
+    padding: 5px 35px !important;
+    margin: 0 5px;
+    line-height: 30px;
+    // &:hover
+    // {
+    //     background: var(--secondary-color);
+    //     color: var(--white) !important;
+    // }
+    .disabled
+    {
+        background: none;
+        color: none;
+    }
+}
+                                                    
+
+
+
+
+
+.wizard-payment
+{
+    .box
+    {
+        .step-component
+        {
+            .first-section
+            {
+                .title
+                {
+                    h2
+                    {
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: var(--black);
+                        line-height: 1.6;
+                        text-align: left;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+                .first-form
+                {
+                    label
+                    {
+                        display: flex;
+                    }
+                    textarea
+                    {
+                        width: 100%;
+                    }
+                }
+            }
+            .second-section
+            {
+                .title
+                {
+                    h2
+                    {
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: var(--black);
+                        line-height: 1.6;
+                        text-align: left;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+                .second-form
+                {
+                    label
+                    {
+                        display: flex;
+                    }
+                    textarea
+                    {
+                        width: 100%;
+                    }
+                }
+            }
+            .third-section
+            {
+                .title
+                {
+                    h2
+                    {
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: var(--black);
+                        line-height: 1.6;
+                        text-align: left;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+                .third-form
+                {
+                    label
+                    {
+                        display: flex;
+                    }
+                    textarea
+                    {
+                        width: 100%;
+                    }
+                    .start-form
+                    {
+                        .gas-fees
+                        {
+                            border: 1px solid #ccc;
+                            border-radius: 10px;
+                            margin: 0.5rem;
+                            padding: 1rem;
+                            background: rgba(204, 204, 204, 0.2901960784);
+                            text-align: left;
+                        }
+                        .pay
+                        {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                            border-radius: 10px;
+                            margin: 0.5rem;
+                            padding: 2rem;
+                            background: rgba(204, 204, 204, 0.2901960784);
+                        }
+                        .slider-btn 
+                        {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  .box .steps {
+    border-bottom: 1px solid #ddd;
+  }
+  .box .steps ul {
+    overflow: hidden;
+  }
+  .box .steps ul li div {
+    color: #999;
+    padding: 10px 0 15px 45px;
+    position: relative;
+    background: #f5f5f5;
+    width: 165px;
+  }
+  .box .steps ul li div span {
+    font-size: 13px;
+  }
+  .box .steps ul li:first-child div {
+    width: 135px;
+    padding-left: 15px;
+  }
+  .box .steps ul li div::before {
+    content: " ";
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #ddd;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 1;
+    margin-left: 1px;
+  }
+  .box .steps ul li div::after {
+    content: " ";
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #f5f5f5;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+  }
+  .box .steps ul li.done div {
+    border-color: var(--primary-color) !important;
+    color: #fff !important;
+    background: var(--primary-color) !important;
+  }
+  .box .steps ul li.done div::after {
+    border-left: 30px solid var(--primary-color);
+  }
+  .box .steps ul li.active div {
+    border-color: var(--secondary-color) !important;
+    color: #fff !important;
+    background: var(--secondary-color) !important;
+  }
+  .box .steps ul li.active div::after {
+    border-left: 30px solid var(--secondary-color);
+  }
+  
+  .box .step-component {
+    padding: 20px;
+    // height: 200px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  .box .btn-component {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }

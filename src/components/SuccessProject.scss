@@ -1,0 +1,402 @@
+
+@import url('../App.css');
+
+
+.home-success-section
+{
+    background: var(--white);
+    padding: 2rem 0;
+    .title-heading
+    {
+        padding-bottom: 1rem;
+        h2
+        {
+            // background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color));
+            background: var(--secondary-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .heading-line
+        {
+            height: 2px;
+            width: 30px;
+            background: var(--secondary-color);
+            margin-bottom: .5rem;
+            display: inline-block;
+        }
+    }
+    
+}
+.home-ongoing-section
+{
+    background: var(--white);
+    padding: 2rem 0;
+    .title-heading
+    {
+        padding-bottom: 1rem;
+        h2
+        {
+            // background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color));
+            background: var(--secondary-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .heading-line
+        {
+            height: 2px;
+            width: 30px;
+            background: var(--secondary-color);
+            margin-bottom: .5rem;
+            display: inline-block;
+        }
+    }
+}
+
+
+.swiper 
+    {
+        width: 100%;
+        height: 100%;
+        .swiper-slide
+        {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .swiper-slide img 
+            {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .more-card
+            {
+                padding: .2rem;
+                position: relative;
+                border-radius: 20px;
+                transition: .5s;
+                height: calc(100% - 2rem);
+                margin: 0 0 1.5rem;
+                background: var(--white);
+                border: 1px solid #ccc; 
+                cursor: pointer;
+                width: 100%;
+                &:hover
+                {
+                    transform: translateY(-10px);
+                    transition: .5s;
+                }
+
+                .relative-card
+                {
+                    position: relative;
+                    .position-relative
+                    {
+                        position: relative;
+                        padding: 0.5rem;
+                        img
+                        {
+                            // min-width: 100%;
+                            // width: 100%;
+                            // object-fit: contain;
+                            // margin-bottom: 0;
+                            // object-position: top;
+                            // border-radius: .5rem;
+                            // height: auto;
+                            // position: relative;
+                            // z-index: 1;
+                            min-width: 100%;
+                            width: 100%;
+                            object-fit: fill;
+                            margin-bottom: 0;
+                            border-radius: 0.5rem;
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+                    // .nft-type-badge-rank
+                    // {
+                    //     position: absolute;
+                    //     bottom: 1rem;
+                    //     right: 1rem;
+                    //     display: flex;
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     font-weight: 600;
+                    //     box-shadow: none;
+                    //     z-index: 2;
+                    //     .rank-title
+                    //     {
+                    //         font-size: .9rem;
+                    //         text-transform: capitalize;
+                    //         font-weight: 600;
+                    //         display: flex;
+                    //         align-items: center;
+                    //         border-radius: .3rem;
+                    //         padding: .1rem .5rem;
+                    //         &.green
+                    //         {
+                    //             background: green;
+                    //             border: 1px solid #fff;
+                    //             color: #fff;
+                    //         }
+                    //         &.red
+                    //         {
+                    //             background: red;
+                    //             border: 1px solid #fff;
+                    //             color: #fff;
+                    //         }
+                    //         &.orange
+                    //         {
+                    //             background: orange;
+                    //             border: 1px solid #fff;
+                    //             color: #fff;
+                    //         }
+                    //     }
+                    // }
+                }
+                
+                .top-content-title
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    position: relative;
+                    padding: 1rem;
+                    .more-nft-info-header
+                    {
+                        .more-nft-title
+                        {
+                            position: relative;
+                            // display: flex;
+                            // align-items: center;
+                            // justify-content: space-between;
+                            color: #e2e2e2;
+                            font-weight: 600;
+                            .more-nft-title-box
+                            {
+                                // width: calc(100% - 4rem);
+                                // display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .more-nft-ownername-info
+                                {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    text-align: left;
+                                    .more-nft-desc
+                                    {
+                                        color: var(--primary-color);
+                                        font-weight: 400;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        font-size: 12px;
+                                        line-height: 2;
+                                    }
+                                    .more-nft-name
+                                    {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        display: block;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        width: 100%;
+                                        line-height: 2;
+                                        color: var(--black);
+                                    }
+                                    .more-nft-para
+                                    {
+                                        font-size: 14px;
+                                        font-weight: 200;
+                                        line-height: 2;
+                                        color: var(--black);
+                                    }
+                                    .more-nft-desc2
+                                    {
+                                        color: var(--black);
+                                        font-weight: 400;
+                                        letter-spacing: .08rem;
+                                        white-space: nowrap;
+                                        // text-overflow: ellipsis;
+                                        // overflow: hidden;    
+                                        padding: 0.5rem 0;
+                                        text-wrap: wrap;
+                                        font-size: 12px;
+                                        line-height: 2;
+                                    }
+                                    .more-nft-location
+                                    {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 2;
+                                        color: red;
+                                    }
+                                    .profile-status
+                                    {
+                                        padding: 0.5rem;
+                                        background-color: #f5f5f5;
+                                        border: 1px solid #e3e3e3;
+                                        border-radius: 4px;
+                                        .one
+                                        {
+                                            .progress
+                                            {
+                                                height: 0.5rem;
+                                                margin: 0.5rem;
+                                                .bg-orange
+                                                {
+                                                    background: orange;
+                                                }
+                                            }
+                                        }
+                                        .two
+                                        {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            padding: 0.5rem 0;
+                                            .fund-details
+                                            {    
+                                                span
+                                                {
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    line-height: 1.6;
+                                                    color: var(--black);
+                                                }
+                                                p
+                                                {
+                                                    font-size: 10px;
+                                                    color: #717171;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    line-height: 1.6;
+                                                }
+                                            }
+                                        }
+                                        .three
+                                        {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            padding: 0.5rem 0;
+                                            .left
+                                            {
+                                                .slider-btn
+                                                {
+                                                    @media only screen and (max-width: 768px)
+                                                    {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        text-align: center; 
+                                                    }
+                                                    .banner-btn
+                                                    {
+                                                        color: var(--white) !important;
+                                                        background: var(--primary-color);
+                                                        padding: 5px 25px !important;
+                                                        margin: 0 5px;
+                                                        border-radius: 50px;
+                                                        border: none;
+                                                        font-size: 10px;
+                                                        &:hover
+                                                        {
+                                                            background: var(--secondary-color);
+                                                        }
+                                                        &.g-rounded-50
+                                                        {
+                                                            border-radius: 50px;
+                                                        }
+                                                        @media only screen and (max-width: 768px)
+                                                        {
+                                                            padding: 10px 20px !important;
+                                                        }
+                                                    }
+                                                    
+                                                }
+                                            }
+                                            .right
+                                            {
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                                gap: 10px;
+                                                .notification-circle
+                                                {
+                                                    img
+                                                    {
+                                                        width: 30px;
+                                                        height: 30px;
+                                                        border-radius: 100%;
+                                                        border: 2px solid var(--primary-color);
+                                                        padding: 0.2rem;    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Demo Projects
+                &.demo-project
+                {
+                    background: #f5f5f5;
+                    .main
+                    {
+                        display: block;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        padding: 10rem 0;
+                        h2
+                        {
+                            font-size: 20px;
+                            padding: 1rem 0;
+                            font-weight: 600;
+                            width: 100%;
+                            line-height: 2;
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+  
+  
+
+    .panel-hover 
+    {
+        // position: absolute;
+        // top: 50%;
+        // z-index: 9999;
+        // left: 0;
+        // width: 100%;
+        opacity: 0;
+    }
+    .more-card:hover .panel-hover
+    {
+        opacity: 1;
+    }
+
+
+            

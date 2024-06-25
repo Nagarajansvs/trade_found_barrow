@@ -1,0 +1,92 @@
+
+.sliderSection
+{
+  background: url('../images/login-banner.jpg');
+  border-radius: 1rem;
+  padding: 6rem;
+  margin: 1rem 0;
+  .login-card
+  {
+    padding: 30px;
+    box-shadow: 0px 40px 70px 0px rgba(1, 19, 44, 0.08);
+    border-radius: 20px;
+    z-index: 1;
+    background: var(--white);
+    border-top: 5px solid var(--primary-color);
+    .title
+    {
+        color: var(--secondary-color);
+        font-size: 25px;
+    }
+    .login-section
+    {
+        font-size: 14px;
+        .form-control
+        {
+            &:focus
+            {
+                box-shadow: none;
+            }
+        }
+        .text-left
+        {
+            text-align: left;
+        }
+        .condition-section
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+            .nav-link{
+                font-size: 12px;
+                font-weight: 500;
+                &:hover{
+                    color: var(--secondary-color);
+                }
+            }
+        }
+        .login-btn
+        {
+            color: var(--white) !important;
+            background: var(--primary-color);
+            padding: 5px 35px !important;
+            margin: 0 5px;
+            border: none;
+            width: 80%;
+            &:hover
+            {
+                background: var(--secondary-color);
+            }
+            &.g-rounded-50
+            {
+                border-radius: 50px;
+            }
+        }
+        .login-bottom
+        {
+            p
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 5px;
+                span
+                {
+                    font-size: 12px;
+                }
+                a
+                {
+                    font-size: 12px;
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+  }
+}
